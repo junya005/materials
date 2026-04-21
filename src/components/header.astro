@@ -1,10 +1,14 @@
+---
+const base = import.meta.env.BASE_URL;
+---
+
 <header style="background-color: #eee; padding: 1rem;">
     <h1>素材配布サイト</h1>
     <nav>
-        <a href="./">ホーム</a> |
-        <a href="./texture">texture</a> |
-        <a href="./model">model</a> |
-        <a href="./sprite">sprite</a> |
-        <a href="./audio">audio</a>
+        <a href={`${base}/`}>ホーム</a> |
+        <a href={`${base}/texture`}>texture</a> |
+        <a href={`${base}/model`}model</a> |
+        <a href={`${base}/sprite`}>sprite</a> |
+        <a href={`${base}/audio`}>audio</a>
     </nav>
 </header>
